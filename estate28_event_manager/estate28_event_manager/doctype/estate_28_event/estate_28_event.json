@@ -1,0 +1,552 @@
+{
+  "actions": [],
+  "allow_import": 1,
+  "allow_rename": 1,
+  "autoname": "format:E28-EVT-{YYYY}-{#####}",
+  "creation": "2026-03-30 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "client_name",
+    "event_date",
+    "event_type",
+    "package_quote",
+    "total_guests",
+    "kids_count",
+    "service_providers_count",
+    "wheelchair_guests",
+    "final_payment_due_date",
+    "final_numbers_due_date",
+    "table_type",
+    "number_of_tables",
+    "main_table_setup",
+    "guest_table_layout",
+    "wooden_benches",
+    "speech_stand",
+    "confetti_stands",
+    "welcome_sign",
+    "register_table",
+    "officiator_details",
+    "welcome_drink_table",
+    "seating_board",
+    "deck_notes",
+    "chapel_flowers",
+    "bridal_bouquet",
+    "bridesmaids_bouquets",
+    "groom_boutonniere",
+    "groomsmen_boutonnieres",
+    "reception_decor",
+    "cake_flowers",
+    "gift_box",
+    "throw_bouquet",
+    "welcome_drinks",
+    "champagne",
+    "other_beverages",
+    "coffee_tea_station",
+    "bar_tab",
+    "barman",
+    "extra_barman",
+    "harvest_table",
+    "mains_meat",
+    "meat_2",
+    "starch",
+    "side_dish_1",
+    "side_dish_2",
+    "dessert",
+    "kids_meals",
+    "cake_flavour",
+    "crockery",
+    "cutlery",
+    "glassware",
+    "napkins",
+    "ceremony_starts",
+    "ceremony_ends",
+    "harvest_and_drinks",
+    "enter_reception",
+    "mains_time",
+    "dessert_time",
+    "bar_last_rounds",
+    "venue_closed",
+    "photographer",
+    "videographer",
+    "dj",
+    "photobooth",
+    "general_notes",
+    "planning_section",
+    "upload",
+    "upload_decor_image",
+    "custom_house_rules"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Data",
+      "label": "ID",
+      "read_only": 1,
+      "hidden": 1
+    },
+    {
+      "fieldname": "client_name",
+      "fieldtype": "Data",
+      "label": "Client Name",
+      "insert_after": "naming_series",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "event_date",
+      "fieldtype": "Date",
+      "label": "Event Date",
+      "insert_after": "client_name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "event_type",
+      "fieldtype": "Data",
+      "label": "Event Type",
+      "insert_after": "event_date",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "package_quote",
+      "fieldtype": "Data",
+      "label": "Package Quote",
+      "insert_after": "event_type",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "total_guests",
+      "fieldtype": "Int",
+      "label": "Total Guests",
+      "insert_after": "package_quote",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "kids_count",
+      "fieldtype": "Int",
+      "label": "Kids Count",
+      "insert_after": "total_guests"
+    },
+    {
+      "fieldname": "service_providers_count",
+      "fieldtype": "Int",
+      "label": "Service Providers Count",
+      "insert_after": "kids_count"
+    },
+    {
+      "fieldname": "wheelchair_guests",
+      "fieldtype": "Int",
+      "label": "Wheelchair Guests",
+      "insert_after": "service_providers_count"
+    },
+    {
+      "fieldname": "final_payment_due_date",
+      "fieldtype": "Date",
+      "label": "Final Payment Due Date",
+      "insert_after": "wheelchair_guests"
+    },
+    {
+      "fieldname": "final_numbers_due_date",
+      "fieldtype": "Date",
+      "label": "Final Numbers Due Date",
+      "insert_after": "final_payment_due_date"
+    },
+    {
+      "fieldname": "table_type",
+      "fieldtype": "Data",
+      "label": "Table Type",
+      "insert_after": "final_numbers_due_date"
+    },
+    {
+      "fieldname": "number_of_tables",
+      "fieldtype": "Small Text",
+      "label": "Number Of Tables",
+      "insert_after": "table_type"
+    },
+    {
+      "fieldname": "main_table_setup",
+      "fieldtype": "Data",
+      "label": "Main Table Setup",
+      "insert_after": "number_of_tables"
+    },
+    {
+      "fieldname": "guest_table_layout",
+      "fieldtype": "Data",
+      "label": "Guest Table Layout",
+      "insert_after": "main_table_setup"
+    },
+    {
+      "fieldname": "wooden_benches",
+      "fieldtype": "Small Text",
+      "label": "Wooden Benches",
+      "insert_after": "guest_table_layout"
+    },
+    {
+      "fieldname": "speech_stand",
+      "fieldtype": "Small Text",
+      "label": "Speech Stand",
+      "insert_after": "wooden_benches"
+    },
+    {
+      "fieldname": "confetti_stands",
+      "fieldtype": "Small Text",
+      "label": "Confetti Stands",
+      "insert_after": "speech_stand"
+    },
+    {
+      "fieldname": "welcome_sign",
+      "fieldtype": "Small Text",
+      "label": "Welcome Sign",
+      "insert_after": "confetti_stands"
+    },
+    {
+      "fieldname": "register_table",
+      "fieldtype": "Small Text",
+      "label": "Register Table",
+      "insert_after": "welcome_sign"
+    },
+    {
+      "fieldname": "officiator_details",
+      "fieldtype": "Data",
+      "label": "Officiator Details",
+      "insert_after": "register_table"
+    },
+    {
+      "fieldname": "welcome_drink_table",
+      "fieldtype": "Small Text",
+      "label": "Welcome Drink Table",
+      "insert_after": "officiator_details"
+    },
+    {
+      "fieldname": "seating_board",
+      "fieldtype": "Small Text",
+      "label": "Seating Board",
+      "insert_after": "welcome_drink_table"
+    },
+    {
+      "fieldname": "deck_notes",
+      "fieldtype": "Small Text",
+      "label": "Deck Notes",
+      "insert_after": "seating_board"
+    },
+    {
+      "fieldname": "chapel_flowers",
+      "fieldtype": "Small Text",
+      "label": "Chapel Flowers",
+      "insert_after": "deck_notes"
+    },
+    {
+      "fieldname": "bridal_bouquet",
+      "fieldtype": "Small Text",
+      "label": "Bridal Bouquet",
+      "insert_after": "chapel_flowers"
+    },
+    {
+      "fieldname": "bridesmaids_bouquets",
+      "fieldtype": "Small Text",
+      "label": "Bridesmaids Bouquets",
+      "insert_after": "bridal_bouquet"
+    },
+    {
+      "fieldname": "groom_boutonniere",
+      "fieldtype": "Small Text",
+      "label": "Groom Boutonniere",
+      "insert_after": "bridesmaids_bouquets"
+    },
+    {
+      "fieldname": "groomsmen_boutonnieres",
+      "fieldtype": "Small Text",
+      "label": "Groomsmen Boutonnieres",
+      "insert_after": "groom_boutonniere"
+    },
+    {
+      "fieldname": "reception_decor",
+      "fieldtype": "Small Text",
+      "label": "Reception Decor",
+      "insert_after": "groomsmen_boutonnieres"
+    },
+    {
+      "fieldname": "cake_flowers",
+      "fieldtype": "Small Text",
+      "label": "Cake Flowers",
+      "insert_after": "reception_decor"
+    },
+    {
+      "fieldname": "gift_box",
+      "fieldtype": "Small Text",
+      "label": "Gift Box",
+      "insert_after": "cake_flowers"
+    },
+    {
+      "fieldname": "throw_bouquet",
+      "fieldtype": "Small Text",
+      "label": "Throw Bouquet",
+      "insert_after": "gift_box"
+    },
+    {
+      "fieldname": "welcome_drinks",
+      "fieldtype": "Small Text",
+      "label": "Welcome Drinks",
+      "insert_after": "throw_bouquet"
+    },
+    {
+      "fieldname": "champagne",
+      "fieldtype": "Small Text",
+      "label": "Champagne",
+      "insert_after": "welcome_drinks"
+    },
+    {
+      "fieldname": "other_beverages",
+      "fieldtype": "Small Text",
+      "label": "Other Beverages",
+      "insert_after": "champagne"
+    },
+    {
+      "fieldname": "coffee_tea_station",
+      "fieldtype": "Small Text",
+      "label": "Coffee Tea Station",
+      "insert_after": "other_beverages"
+    },
+    {
+      "fieldname": "bar_tab",
+      "fieldtype": "Small Text",
+      "label": "Bar Tab",
+      "insert_after": "coffee_tea_station"
+    },
+    {
+      "fieldname": "barman",
+      "fieldtype": "Small Text",
+      "label": "Barman",
+      "insert_after": "bar_tab"
+    },
+    {
+      "fieldname": "extra_barman",
+      "fieldtype": "Small Text",
+      "label": "Extra Barman",
+      "insert_after": "barman"
+    },
+    {
+      "fieldname": "harvest_table",
+      "fieldtype": "Small Text",
+      "label": "Harvest Table",
+      "insert_after": "extra_barman"
+    },
+    {
+      "fieldname": "mains_meat",
+      "fieldtype": "Small Text",
+      "label": "Mains Meat",
+      "insert_after": "harvest_table"
+    },
+    {
+      "fieldname": "meat_2",
+      "fieldtype": "Small Text",
+      "label": "Meat 2",
+      "insert_after": "mains_meat"
+    },
+    {
+      "fieldname": "starch",
+      "fieldtype": "Small Text",
+      "label": "Starch",
+      "insert_after": "meat_2"
+    },
+    {
+      "fieldname": "side_dish_1",
+      "fieldtype": "Small Text",
+      "label": "Side Dish 1",
+      "insert_after": "starch"
+    },
+    {
+      "fieldname": "side_dish_2",
+      "fieldtype": "Small Text",
+      "label": "Side Dish 2",
+      "insert_after": "side_dish_1"
+    },
+    {
+      "fieldname": "dessert",
+      "fieldtype": "Small Text",
+      "label": "Dessert",
+      "insert_after": "side_dish_2"
+    },
+    {
+      "fieldname": "kids_meals",
+      "fieldtype": "Small Text",
+      "label": "Kids Meals",
+      "insert_after": "dessert"
+    },
+    {
+      "fieldname": "cake_flavour",
+      "fieldtype": "Data",
+      "label": "Cake Flavour",
+      "insert_after": "kids_meals"
+    },
+    {
+      "fieldname": "crockery",
+      "fieldtype": "Small Text",
+      "label": "Crockery",
+      "insert_after": "cake_flavour"
+    },
+    {
+      "fieldname": "cutlery",
+      "fieldtype": "Small Text",
+      "label": "Cutlery",
+      "insert_after": "crockery"
+    },
+    {
+      "fieldname": "glassware",
+      "fieldtype": "Small Text",
+      "label": "Glassware",
+      "insert_after": "cutlery"
+    },
+    {
+      "fieldname": "napkins",
+      "fieldtype": "Small Text",
+      "label": "Napkins",
+      "insert_after": "glassware"
+    },
+    {
+      "fieldname": "ceremony_starts",
+      "fieldtype": "Time",
+      "label": "Ceremony Starts",
+      "insert_after": "napkins"
+    },
+    {
+      "fieldname": "ceremony_ends",
+      "fieldtype": "Time",
+      "label": "Ceremony Ends",
+      "insert_after": "ceremony_starts"
+    },
+    {
+      "fieldname": "harvest_and_drinks",
+      "fieldtype": "Time",
+      "label": "Harvest And Drinks",
+      "insert_after": "ceremony_ends"
+    },
+    {
+      "fieldname": "enter_reception",
+      "fieldtype": "Time",
+      "label": "Enter Reception",
+      "insert_after": "harvest_and_drinks"
+    },
+    {
+      "fieldname": "mains_time",
+      "fieldtype": "Time",
+      "label": "Mains Time",
+      "insert_after": "enter_reception"
+    },
+    {
+      "fieldname": "dessert_time",
+      "fieldtype": "Time",
+      "label": "Dessert Time",
+      "insert_after": "mains_time"
+    },
+    {
+      "fieldname": "bar_last_rounds",
+      "fieldtype": "Time",
+      "label": "Bar Last Rounds",
+      "insert_after": "dessert_time"
+    },
+    {
+      "fieldname": "venue_closed",
+      "fieldtype": "Time",
+      "label": "Venue Closed",
+      "insert_after": "bar_last_rounds"
+    },
+    {
+      "fieldname": "photographer",
+      "fieldtype": "Data",
+      "label": "Photographer",
+      "insert_after": "venue_closed",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "videographer",
+      "fieldtype": "Data",
+      "label": "Videographer",
+      "insert_after": "photographer"
+    },
+    {
+      "fieldname": "dj",
+      "fieldtype": "Data",
+      "label": "DJ",
+      "insert_after": "videographer",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "photobooth",
+      "fieldtype": "Data",
+      "label": "Photobooth",
+      "insert_after": "dj"
+    },
+    {
+      "fieldname": "general_notes",
+      "fieldtype": "Text Editor",
+      "label": "General Notes",
+      "insert_after": "photobooth"
+    },
+    {
+      "fieldname": "planning_section",
+      "fieldtype": "Section Break",
+      "label": "Planning & Decor",
+      "insert_after": "general_notes"
+    },
+    {
+      "fieldname": "upload",
+      "fieldtype": "Attach",
+      "label": "Upload",
+      "insert_after": "planning_section"
+    },
+    {
+      "fieldname": "upload_decor_image",
+      "fieldtype": "Attach",
+      "label": "Upload Decor Image",
+      "insert_after": "upload"
+    },
+    {
+      "fieldname": "custom_house_rules",
+      "fieldtype": "Text Editor",
+      "label": "Custom House Rules",
+      "insert_after": "upload_decor_image"
+    }
+  ],
+  "grid_page_length": 50,
+  "index_web_pages_for_search": 1,
+  "istable": 0,
+  "links": [],
+  "module": "Estate28 Event Manager",
+  "name": "Estate 28 Event",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "share": 1,
+      "write": 1,
+      "role": "System Manager"
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "share": 1,
+      "write": 1,
+      "role": "Sales User"
+    }
+  ],
+  "quick_entry": 0,
+  "search_fields": "client_name,event_date,package_quote,photographer,dj",
+  "sort_field": "event_date",
+  "sort_order": "ASC",
+  "states": [],
+  "title_field": "client_name",
+  "track_changes": 1
+}

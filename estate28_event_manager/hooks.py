@@ -1,0 +1,6 @@
+app_name = "estate28_event_manager"
+app_title = "Estate28 Event Manager"
+app_publisher = "Estate28"
+app_description = "Wedding and event planning app for Estate28"
+app_email = "info@estate28.co.za"
+app_license = "MIT"
