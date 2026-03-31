@@ -1,24 +1,39 @@
 # Estate28 Event Manager
 
-Starter Frappe app for managing weddings and events in ERPNext / Frappe Cloud.
+Custom Frappe / ERPNext app for wedding and event planning at Estate28.
 
 ## What is included
-- App scaffold with valid `pyproject.toml`
-- Module: `Estate28 Event Manager`
-- DocType: `Estate 28 Event`
-- Import-ready CSV based on your 2026 wedding data
 
-## Install on Frappe Cloud
-1. Push this repo to GitHub.
-2. In Frappe Cloud, open your Bench Group → **Apps** → **Add App**.
-3. Add the GitHub repository and deploy it.
-4. Install the app on your site.
+- **Estate 28 Event** DocType
+- **Create Customer** button logic
+- **Create Sales Invoice** button logic
+- helper methods to:
+  - create a Customer if one does not exist
+  - create a Sales Invoice linked to the event
+  - auto-calculate final payment dates and event title
+- import-ready CSV generated from uploaded 2026 wedding data
 
-## Import data
-Use the included `estate28_2026_import_ready.csv` file with Data Import after the app is installed.
+## Important
 
-## Next recommended phase
-- Add Customer auto-creation
-- Add a “Create Sales Invoice” button
-- Add dashboards for final payment due and final numbers due
-- Add service provider child tables
+This is a practical starter app scaffold for Frappe Cloud / ERPNext v15 style setups.
+After installation, review field labels, permissions, and item names inside ERPNext.
+
+## Suggested ERPNext setup before using invoice generation
+
+Create an Item in ERPNext:
+
+- **Event Booking**
+- or update the default item code in the app
+
+The invoice tool uses the item code:
+`Event Booking`
+
+## GitHub / Frappe Cloud
+
+At the **root** of the repository you must see:
+
+- `pyproject.toml`
+- `README.md`
+- `estate28_event_manager/`
+
+If `pyproject.toml` is nested one level down, Frappe Cloud will reject the app.

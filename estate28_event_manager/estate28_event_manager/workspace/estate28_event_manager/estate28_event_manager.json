@@ -1,0 +1,32 @@
+{
+  "doctype": "Workspace",
+  "name": "Estate28 Event Manager",
+  "module": "Estate28 Event Manager",
+  "label": "Estate28 Event Manager",
+  "title": "Estate28 Event Manager",
+  "icon": "calendar",
+  "public": 1,
+  "content": "[{\"id\":\"events_shortcut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Estate 28 Event\",\"col\":3}},{\"id\":\"customers_shortcut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}},{\"id\":\"sales_invoice_shortcut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":3}}]",
+  "links": [],
+  "charts": [],
+  "shortcuts": [
+    {
+      "label": "Estate 28 Event",
+      "link_to": "Estate 28 Event",
+      "type": "DocType",
+      "color": "Blue"
+    },
+    {
+      "label": "Customer",
+      "link_to": "Customer",
+      "type": "DocType",
+      "color": "Green"
+    },
+    {
+      "label": "Sales Invoice",
+      "link_to": "Sales Invoice",
+      "type": "DocType",
+      "color": "Orange"
+    }
+  ]
+}
