@@ -1,32 +1,81 @@
 {
-  "doctype": "Workspace",
-  "name": "Estate28 Event Manager",
-  "module": "Estate28 Event Manager",
-  "label": "Estate28 Event Manager",
-  "title": "Estate28 Event Manager",
-  "icon": "calendar",
-  "public": 1,
-  "content": "[{\"id\":\"events_shortcut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Estate 28 Event\",\"col\":3}},{\"id\":\"customers_shortcut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}},{\"id\":\"sales_invoice_shortcut\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":3}}]",
-  "links": [],
   "charts": [],
+  "content": "[{\"id\": \"overview_header\", \"type\": \"header\", \"data\": {\"text\": \"Estate28 Event Manager\", \"col\": 12}}, {\"id\": \"shortcut_dashboard\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Estate28 Dashboard\", \"col\": 3}}, {\"id\": \"shortcut_events\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Estate 28 Event\", \"col\": 3}}, {\"id\": \"shortcut_upcoming\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Upcoming Weddings\", \"col\": 3}}, {\"id\": \"shortcut_outstanding\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Outstanding Amounts\", \"col\": 3}}, {\"id\": \"reports_header\", \"type\": \"header\", \"data\": {\"text\": \"Reports\", \"col\": 12}}, {\"id\": \"shortcut_photographers\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Photographer Schedule\", \"col\": 3}}, {\"id\": \"shortcut_status\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Weddings by Status\", \"col\": 3}}]",
+  "creation": "2026-03-31 16:30:00.000000",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "idx": 0,
+  "indicator_color": "blue",
+  "is_hidden": 0,
+  "label": "Estate28 Event Manager",
+  "links": [],
+  "modified": "2026-03-31 16:30:00.000000",
+  "modified_by": "Administrator",
+  "module": "Estate28 Event Manager",
+  "name": "Estate28 Event Manager",
+  "number_cards": [],
+  "owner": "Administrator",
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "roles": [
+    {
+      "role": "System Manager"
+    }
+  ],
+  "sequence_id": 15.0,
   "shortcuts": [
     {
+      "color": "Blue",
+      "doc_view": "",
+      "format": null,
+      "label": "Estate28 Dashboard",
+      "link_to": "estate28-dashboard",
+      "type": "Page"
+    },
+    {
+      "color": "Green",
+      "doc_view": "List",
+      "format": null,
       "label": "Estate 28 Event",
       "link_to": "Estate 28 Event",
-      "type": "DocType",
-      "color": "Blue"
+      "type": "DocType"
     },
     {
-      "label": "Customer",
-      "link_to": "Customer",
-      "type": "DocType",
-      "color": "Green"
+      "color": "Orange",
+      "doc_view": "Report",
+      "format": null,
+      "label": "Upcoming Weddings",
+      "link_to": "Upcoming Weddings",
+      "type": "Report"
     },
     {
-      "label": "Sales Invoice",
-      "link_to": "Sales Invoice",
-      "type": "DocType",
-      "color": "Orange"
+      "color": "Red",
+      "doc_view": "Report",
+      "format": null,
+      "label": "Outstanding Amounts",
+      "link_to": "Outstanding Amounts",
+      "type": "Report"
+    },
+    {
+      "color": "Purple",
+      "doc_view": "Report",
+      "format": null,
+      "label": "Photographer Schedule",
+      "link_to": "Photographer Schedule",
+      "type": "Report"
+    },
+    {
+      "color": "Cyan",
+      "doc_view": "Report",
+      "format": null,
+      "label": "Weddings by Status",
+      "link_to": "Weddings by Status",
+      "type": "Report"
     }
-  ]
+  ],
+  "title": "Estate28 Event Manager"
 }

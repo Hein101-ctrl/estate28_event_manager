@@ -1,0 +1,21 @@
+{
+  "content": "[]",
+  "creation": "2026-03-31 16:30:00.000000",
+  "docstatus": 0,
+  "doctype": "Page",
+  "idx": 0,
+  "modified": "2026-03-31 16:30:00.000000",
+  "modified_by": "Administrator",
+  "module": "Estate28 Event Manager",
+  "name": "estate28-dashboard",
+  "owner": "Administrator",
+  "page_name": "estate28-dashboard",
+  "roles": [
+    {
+      "role": "System Manager"
+    }
+  ],
+  "script": "",
+  "standard": "Yes",
+  "style": ""
+}

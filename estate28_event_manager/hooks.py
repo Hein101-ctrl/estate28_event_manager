@@ -5,6 +5,8 @@ app_description = "Wedding and event planning app for Estate28"
 app_email = "info@estate28.co.za"
 app_license = "MIT"
 
+# Keep the live DocType schema exactly as v3.
+# v4 clean only adds workspace, dashboard, reports and helper API.
 fixtures = [
     {
         "doctype": "Workspace",
