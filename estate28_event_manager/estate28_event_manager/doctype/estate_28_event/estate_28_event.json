@@ -15,13 +15,19 @@
     "event_date",
     "event_type",
     "package_quote",
+    "venue_area",
     "package_amount",
+    "deposit_amount",
+    "amount_paid",
+    "balance_due",
     "column_break_client",
     "customer",
     "sales_invoice",
     "final_payment_due_date",
     "final_numbers_due_date",
     "status",
+    "section_internal",
+    "internal_status",
     "section_numbers",
     "total_guests",
     "kids_count",
@@ -527,6 +533,46 @@
       "fieldname": "custom_house_rules",
       "fieldtype": "Long Text",
       "label": "House Rules"
+    },
+    {
+      "fieldname": "venue_area",
+      "label": "Venue Area",
+      "fieldtype": "Select",
+      "options": "Milkshed\nChapel\nFull Venue",
+      "insert_after": "package_quote"
+    },
+    {
+      "fieldname": "deposit_amount",
+      "label": "Deposit Amount",
+      "fieldtype": "Currency",
+      "insert_after": "package_amount"
+    },
+    {
+      "fieldname": "amount_paid",
+      "label": "Amount Paid",
+      "fieldtype": "Currency",
+      "insert_after": "deposit_amount"
+    },
+    {
+      "fieldname": "balance_due",
+      "label": "Balance Due",
+      "fieldtype": "Currency",
+      "read_only": 1,
+      "insert_after": "amount_paid"
+    },
+    {
+      "fieldname": "section_internal",
+      "label": "Internal Management",
+      "fieldtype": "Section Break",
+      "insert_after": "status"
+    },
+    {
+      "fieldname": "internal_status",
+      "label": "Internal Status",
+      "fieldtype": "Select",
+      "options": "Lead\nQuote Sent\nBooked\nPlanning\nAwaiting Final Numbers\nAwaiting Final Payment\nReady For Wedding\nCompleted",
+      "default": "Lead",
+      "insert_after": "section_internal"
     }
   ],
   "autoname": "format:{client_name} - {event_date}",

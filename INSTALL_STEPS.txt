@@ -1,34 +1,19 @@
-ESTATE28 EVENT MANAGER V2 - INSTALL STEPS
+ESTATE28 EVENT MANAGER V3 - UPDATE STEPS
 
-1. Create a NEW GitHub repository.
-2. Upload EVERYTHING in this folder to the ROOT of the repo.
-3. Confirm the repo root shows:
-   - pyproject.toml
-   - README.md
-   - estate28_event_manager/
-   - import_templates/
+THIS IS AN UPDATE PACKAGE FOR USERS ALREADY ON V1 OR V2.
 
-4. In Frappe Cloud:
-   - Bench Group
-   - Apps
-   - Add App
-   - Connect this GitHub repo
-   - Deploy
-   - Install on your site
+1. Use the SAME GitHub repository already connected to Frappe Cloud.
+2. Replace the repo files with this v3 package.
+3. Commit and push to GitHub.
+4. In Frappe Cloud, open the Bench Group and deploy the app update to your site.
+5. After update, open Estate 28 Event and confirm these new fields exist:
+   - Venue Area
+   - Deposit Amount
+   - Amount Paid
+   - Balance Due
+   - Internal Status
 
-5. After install:
-   - Go to Awesome Bar and search: Estate 28 Event
-   - Open the DocType list
-   - Import import_templates/estate_28_event_import_v2.csv
-
-6. Before using "Create Sales Invoice":
-   - Create an Item in ERPNext called: Event Booking
-   - or edit DEFAULT_ITEM_CODE inside estate_28_event.py
-
-7. If Frappe Cloud says pyproject.toml not found:
-   - your files are nested one level too deep
-   - move them to repo root
-
-8. If workspace does not show immediately:
-   - use the Awesome Bar and search for "Estate28 Event Manager"
-   - or open the Estate 28 Event DocType directly
+NOTES
+- This package assumes you did NOT add manual Customize Form fields outside the app.
+- Because your current setup came from the app itself, this is the correct clean update route.
+- Balance Due auto-calculates from Package Amount minus Amount Paid.

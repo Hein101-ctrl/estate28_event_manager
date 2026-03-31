@@ -41,3 +41,16 @@ frappe.ui.form.on("Estate 28 Event", {
         }
     }
 });
+
+frappe.ui.form.on("Estate 28 Event", {
+    package_amount(frm) {
+        let package_amount = flt(frm.doc.package_amount || 0);
+        let amount_paid = flt(frm.doc.amount_paid || 0);
+        frm.set_value("balance_due", Math.max(package_amount - amount_paid, 0));
+    },
+    amount_paid(frm) {
+        let package_amount = flt(frm.doc.package_amount || 0);
+        let amount_paid = flt(frm.doc.amount_paid || 0);
+        frm.set_value("balance_due", Math.max(package_amount - amount_paid, 0));
+    }
+});

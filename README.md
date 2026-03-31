@@ -37,3 +37,12 @@ At the **root** of the repository you must see:
 - `estate28_event_manager/`
 
 If `pyproject.toml` is nested one level down, Frappe Cloud will reject the app.
+
+
+## Version 3 additions
+
+- Safe update path from v1/v2 when no manual Customize Form changes were made
+- Added Venue Area
+- Added Deposit Amount, Amount Paid, Balance Due
+- Added Internal Status for operational tracking
+- Auto-calculates Balance Due from Package Amount minus Amount Paid

@@ -14,10 +14,17 @@ class Estate28Event(Document):
     def validate(self):
         self.set_title()
         self.set_due_dates()
+        self.set_balance_due()
 
     def set_title(self):
         if self.client_name and self.event_date:
             self.event_title = f"{self.client_name} - {self.event_date}"
+
+
+    def set_balance_due(self):
+        package_amount = self.package_amount or 0
+        amount_paid = self.amount_paid or 0
+        self.balance_due = max(package_amount - amount_paid, 0)
 
     def set_due_dates(self):
         if self.event_date:
