@@ -20,7 +20,6 @@ class Estate28Event(Document):
         if self.client_name and self.event_date:
             self.event_title = f"{self.client_name} - {self.event_date}"
 
-
     def set_balance_due(self):
         package_amount = self.package_amount or 0
         amount_paid = self.amount_paid or 0
@@ -74,11 +73,24 @@ def create_sales_invoice_from_event(docname):
     if not rate:
         frappe.throw("Package amount is required before creating a Sales Invoice.")
 
+    posting_date = getdate(today())
+
+    candidate_due_date = None
+    if doc.final_payment_due_date:
+        candidate_due_date = getdate(doc.final_payment_due_date)
+    elif doc.event_date:
+        candidate_due_date = getdate(doc.event_date)
+
+    if candidate_due_date and candidate_due_date >= posting_date:
+        due_date = candidate_due_date
+    else:
+        due_date = posting_date
+
     invoice = frappe.get_doc({
         "doctype": "Sales Invoice",
         "customer": customer_name,
-        "posting_date": today(),
-        "due_date": doc.final_payment_due_date or doc.event_date,
+        "posting_date": posting_date,
+        "due_date": due_date,
         "remarks": f"Generated from Estate 28 Event {doc.name}",
         "items": [
             {
